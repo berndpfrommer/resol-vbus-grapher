@@ -9,6 +9,7 @@ The software has been tested for the DeltaSol ES controller, but could work for 
 1. make an install directory, e.g. /usr/local/resol
 2. cp resol.py and resol_daemon.cfg into /usr/local/resol
 3. copy (as root) the ubuntu startup scrip to /etc/init:
+
    cp start_scripts/ubuntu/resol.cfg /etc/init/
 
 ## Configuration
@@ -19,14 +20,17 @@ The software has been tested for the DeltaSol ES controller, but could work for 
     home_directory=/usr/local/resol
 
   Set the hostname under which the LAN adapter is available on the net:
+
     [vbus_adapter]
     hostname=hostname.of.resol.adapter
     port=7053
 
   Pick a name for the rrd database file. Make sure this directory does not get wiped out on machine reboot:
+
     rrd_filename=/var/tmp/resol.rrd
 
   Decide where you want the generated graphs to be written:
+
     graph_output_dir=/var/www/html/resol
 
   Adjust the graphs as you see fit. See default config file for examples:
