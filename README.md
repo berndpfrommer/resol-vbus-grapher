@@ -7,7 +7,7 @@ The software has been tested for the DeltaSol ES controller, but could work for 
 ## Installation
 
 1. make an install directory, e.g. /usr/local/resol
-2. cp resol.py and resol_daemon.cfg into /usr/local/resol
+2. cp resol.py, add_ds.pl, and resol_daemon.cfg into /usr/local/resol
 3. copy (as root) the ubuntu startup scrip to /etc/init:
 
    cp start_scripts/ubuntu/resol.cfg /etc/init/
